@@ -1,101 +1,90 @@
 import Image from "next/image";
+import Link from 'next/link';
+
+const sections = [
+  {
+    title: "Value Proposition",
+    description: "Our mission and project goals",
+    href: "/value-proposition",
+    color: "from-cambridge-blue to-tea-green",
+    delay: "stagger-delay-1"
+  },
+  {
+    title: "Users",
+    description: "Target users and personas",
+    href: "/users",
+    color: "from-tea-green to-light-green",
+    delay: "stagger-delay-2"
+  },
+  {
+    title: "Interviews",
+    description: "User research and findings",
+    href: "/interviews",
+    color: "from-light-green to-celadon",
+    delay: "stagger-delay-3"
+  },
+  {
+    title: "Initial Design",
+    description: "Early concepts and sketches",
+    href: "/initial-design",
+    color: "from-celadon to-cambridge-blue",
+    delay: "stagger-delay-4"
+  },
+  {
+    title: "Prototypes",
+    description: "Testing and validation",
+    href: "/prototypes",
+    color: "from-cambridge-blue to-light-pink",
+    delay: "stagger-delay-1"
+  },
+  {
+    title: "Iteration",
+    description: "Design refinements",
+    href: "/iteration",
+    color: "from-light-pink to-dark-purple",
+    delay: "stagger-delay-2"
+  },
+  {
+    title: "Evaluation",
+    description: "User testing results",
+    href: "/evaluation",
+    color: "from-dark-purple to-gray",
+    delay: "stagger-delay-3"
+  },
+  {
+    title: "Conclusion",
+    description: "Final thoughts and learnings",
+    href: "/conclusion",
+    color: "from-gray to-cambridge-blue",
+    delay: "stagger-delay-4"
+  }
+];
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
+    <div className="min-h-screen bg-gradient-to-b from-cream to-beige">
+      <main className="section-container">
+        <section className="text-center mb-16 animate-fade-in">
+          <h1 className="text-6xl font-bold mb-6">Motion Design Portfolio</h1>
+          <p className="text-xl text-gray max-w-2xl mx-auto">
+            A comprehensive journey through our design process
+          </p>
+        </section>
+        
+        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {sections.map((section) => (
+            <div key={section.title} className={`card ${section.delay}`}>
+              <Link href={section.href} className="block">
+                <div className={`h-2 w-20 mb-4 rounded-full bg-gradient-to-r ${section.color}`} />
+                <h2 className="text-xl font-semibold mb-2 group-hover:text-cambridge-blue transition-colors">
+                  {section.title}
+                </h2>
+                <p className="text-gray">{section.description}</p>
+              </Link>
+            </div>
+          ))}
+        </section>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
     </div>
   );
 }

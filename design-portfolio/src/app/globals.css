@@ -3,19 +3,120 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --cream: #FFFDD0;
+  --beige: #F5F5DC;
+  --tea-green: #D0F0C0;
+  --celadon: #ACE1AF;
+  --cambridge-blue: #A3C1AD;
+  --gray: #808080;
+  --light-green: #90EE90;
+  --dark-purple: #301934;
+  --light-pink: #FFB6C1;
+  
+  --background: var(--cream);
+  --foreground: var(--dark-purple);
+  --primary: var(--cambridge-blue);
+  --secondary: var(--celadon);
+  --accent: var(--light-pink);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-beige p-8 rounded-2xl shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-[1.02] border-2 border-cambridge-blue/20;
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+
+  .nav-link {
+    @apply px-4 py-2 rounded-full transition-all duration-300 hover:bg-cambridge-blue/20 text-dark-purple;
+  }
+
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+
+  h1 {
+    @apply text-5xl font-bold mb-8;
+    background: linear-gradient(to right, var(--dark-purple), var(--cambridge-blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  h2 {
+    @apply text-3xl font-semibold mb-6 text-dark-purple;
+  }
+  
+  h3 {
+    @apply text-2xl font-medium mb-4 text-cambridge-blue;
+  }
+  
+  p {
+    @apply mb-6 leading-relaxed text-gray-600;
+  }
+
+  .gradient-text {
+    background: linear-gradient(to right, var(--dark-purple), var(--cambridge-blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .content-section {
+    @apply relative bg-cream/50 rounded-2xl p-8 shadow-lg border border-cambridge-blue/10 backdrop-blur-sm;
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+
+  .section-title {
+    @apply flex items-center gap-4 mb-6;
+  }
+
+  .section-title::before {
+    content: '';
+    @apply block w-8 h-1 bg-gradient-to-r from-cambridge-blue to-tea-green rounded-full;
+  }
+
+  .content-grid {
+    @apply grid grid-cols-1 md:grid-cols-2 gap-8;
+  }
+
+  .highlight-box {
+    @apply bg-gradient-to-br from-cambridge-blue/10 to-tea-green/10 p-6 rounded-xl border border-cambridge-blue/20;
+  }
+}
+
+@layer utilities {
+  .stagger-delay-1 {
+    animation-delay: 0.1s;
+  }
+
+  .stagger-delay-2 {
+    animation-delay: 0.2s;
+  }
+
+  .stagger-delay-3 {
+    animation-delay: 0.3s;
+  }
+
+  .stagger-delay-4 {
+    animation-delay: 0.4s;
+  }
 }
