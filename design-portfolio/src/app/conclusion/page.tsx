@@ -27,7 +27,7 @@ export default function Conclusion() {
           </div>
           <div className="space-y-4">
             <p>Our journey in creating Motion has been transformative, leading to significant improvements in motion design workflows.</p>
-            <p>Through iterative design and continuous user feedback, we've created a tool that truly serves its users' needs.</p>
+            <p>Through iterative design and continuous user feedback, we&aposve created a tool that truly serves its users&apos needs.</p>
           </div>
         </div>
       </section>
