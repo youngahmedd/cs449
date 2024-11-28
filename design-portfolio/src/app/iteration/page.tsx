@@ -94,9 +94,9 @@ export default function Iteration() {
           <div className="highlight-box">
             <h3>User Feedback</h3>
             <div className="space-y-3 mt-4">
-              <p>"Much more intuitive and efficient workflow"</p>
-              <p>"Significant improvement in performance"</p>
-              <p>"Love the new keyboard shortcuts"</p>
+              <p>&quot;Much more intuitive and efficient workflow&quot;</p>
+              <p>&quot;Significant improvement in performance&quot;</p>
+              <p>&quot;Love the new keyboard shortcuts&quot;</p>
             </div>
           </div>
         </div>

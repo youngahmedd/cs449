@@ -3,15 +3,15 @@
 @tailwind utilities;
 
 :root {
-  --cream: #FFFDD0;
-  --beige: #F5F5DC;
-  --tea-green: #D0F0C0;
-  --celadon: #ACE1AF;
-  --cambridge-blue: #A3C1AD;
-  --gray: #808080;
-  --light-green: #90EE90;
-  --dark-purple: #301934;
-  --light-pink: #FFB6C1;
+  --cream: #FFF8E7;
+  --beige: #F5E6D3;
+  --tea-green: #98D8C1;
+  --celadon: #7AB5A6;
+  --cambridge-blue: #5B8C85;
+  --gray: #4A4A4A;
+  --light-green: #A8E6CF;
+  --dark-purple: #2D3436;
+  --light-pink: #FFB5B5;
   
   --background: var(--cream);
   --foreground: var(--dark-purple);
@@ -39,7 +39,7 @@
 
 @layer components {
   .card {
-    @apply bg-beige p-8 rounded-2xl shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-[1.02] border-2 border-cambridge-blue/20;
+    @apply bg-white/90 p-8 rounded-2xl shadow-lg transition-all duration-300 hover:shadow-2xl hover:scale-[1.02] border-2 border-cambridge-blue/20;
     animation: fadeIn 0.5s ease-out forwards;
   }
 
@@ -81,7 +81,7 @@
   }
 
   .content-section {
-    @apply relative bg-cream/50 rounded-2xl p-8 shadow-lg border border-cambridge-blue/10 backdrop-blur-sm;
+    @apply relative bg-white/90 rounded-2xl p-8 shadow-lg border border-cambridge-blue/10 backdrop-blur-sm;
     animation: fadeIn 0.5s ease-out forwards;
   }
 
@@ -99,7 +99,7 @@
   }
 
   .highlight-box {
-    @apply bg-gradient-to-br from-cambridge-blue/10 to-tea-green/10 p-6 rounded-xl border border-cambridge-blue/20;
+    @apply bg-white/80 p-6 rounded-xl border border-cambridge-blue/20 shadow-sm;
   }
 }
 
