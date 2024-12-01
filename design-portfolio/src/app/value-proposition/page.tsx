@@ -1,4 +1,5 @@
 import PageLayout from '../../../components/PageLayout';
+import ImageModal from '../../components/ImageModal';
 
 export default function ValueProposition() {
   return (
@@ -112,6 +113,27 @@ export default function ValueProposition() {
                 <span>20% reduction in car usage for short trips</span>
               </li>
             </ul>
+          </div>
+        </div>
+      </section>
+
+      <section className="content-section">
+        <div className="section-title">
+          <h2>Initial Brainstorming</h2>
+        </div>
+        <div className="content-grid">
+          <div className="highlight-box">
+            <h3>Feature Brainstorm</h3>
+            <div className="relative h-[400px] w-full">
+              <ImageModal
+                src="/feature-brainstorm.jpg"
+                alt="Initial feature brainstorming session results"
+              />
+            </div>
+          </div>
+          <div className="space-y-4">
+            <p>Our initial brainstorming session focused on identifying key features that would address the core problems while promoting active transportation and community engagement.</p>
+            <p>Through collaborative discussion and ideation, we explored various possibilities for encouraging sustainable transportation habits while building social connections.</p>
           </div>
         </div>
       </section>

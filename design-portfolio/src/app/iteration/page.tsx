@@ -1,5 +1,6 @@
 import PageLayout from '../../../components/PageLayout';
 import Image from 'next/image';
+import ImageModal from '../../components/ImageModal';
 
 export default function Iteration() {
   return (
@@ -201,27 +202,27 @@ export default function Iteration() {
             {
               title: "Post Detail View",
               description: "Added detailed post view functionality to enhance social interaction",
-              imagePath: "/iterations/post-detail.jpg"
+              imagePath: "/improvements/figure1.png"
             },
             {
               title: "Quick Landmark Addition",
               description: "Implemented hold-to-add landmark feature for faster interaction",
-              imagePath: "/iterations/quick-landmark.jpg"
+              imagePath: "/improvements/figure2.png"
             },
             {
               title: "Enhanced Social Features",
               description: "Added friend request and notification system",
-              imagePath: "/iterations/social-features.jpg"
+              imagePath: "/improvements/figure3.png"
             },
             {
               title: "Live Activity Map",
               description: "Renamed and improved activity visualization with clear indicators",
-              imagePath: "/iterations/activity-map.jpg"
+              imagePath: "/improvements/figure4.png"
             },
             {
               title: "Friends Map Integration",
               description: "Added friend location tracking with event attendance visibility",
-              imagePath: "/iterations/friends-map.jpg"
+              imagePath: "/improvements/figure5.png"
             }
           ].map((improvement, index) => (
             <div key={index} className="highlight-box">
@@ -231,9 +232,10 @@ export default function Iteration() {
                   <p>{improvement.description}</p>
                 </div>
                 <div className="relative h-[200px]">
-                  <div className="absolute inset-0 flex items-center justify-center bg-cream/50 rounded-lg border-2 border-dashed border-cambridge-blue/30">
-                    <p className="text-gray-500 italic">Improvement Screenshot Pending</p>
-                  </div>
+                  <ImageModal
+                    src={improvement.imagePath}
+                    alt={`Improvement screenshot for ${improvement.title}`}
+                  />
                 </div>
               </div>
             </div>

@@ -1,5 +1,5 @@
 import PageLayout from '../../../components/PageLayout';
-import Image from 'next/image';
+import ImageModal from '../../components/ImageModal';
 
 export default function InitialDesign() {
   return (
@@ -53,23 +53,24 @@ export default function InitialDesign() {
             {[
               {
                 title: "Indirect Stakeholders",
-                imagePath: "/vsd/indirect-stakeholders.jpg"
+                imagePath: "/indirect-stakeholders.jpg"
               },
               {
                 title: "Long-term Health & Wellness",
-                imagePath: "/vsd/health-wellness.jpg"
+                imagePath: "/LTH.jpg"
               },
               {
                 title: "Widespread Use",
-                imagePath: "/vsd/widespread-use.jpg"
+                imagePath: "/widerspread.jpg"
               }
             ].map((card, index) => (
               <div key={index} className="highlight-box">
                 <h3 className="text-lg font-medium mb-4">{card.title}</h3>
                 <div className="relative h-[200px] w-full">
-                  <div className="absolute inset-0 flex items-center justify-center bg-cream/50 rounded-lg border-2 border-dashed border-cambridge-blue/30">
-                    <p className="text-gray-500 italic">VSD Card Image Pending</p>
-                  </div>
+                  <ImageModal
+                    src={card.imagePath}
+                    alt={`VSD card for ${card.title}`}
+                  />
                 </div>
               </div>
             ))}
@@ -164,17 +165,19 @@ export default function InitialDesign() {
                   <div>
                     <h4 className="font-medium mb-2">Crazy 8s Sketch</h4>
                     <div className="relative h-[200px] w-full">
-                      <div className="absolute inset-0 flex items-center justify-center bg-cream/50 rounded-lg border-2 border-dashed border-cambridge-blue/30">
-                        <p className="text-gray-500 italic">Crazy 8s Sketch Pending</p>
-                      </div>
+                      <ImageModal
+                        src={`/C8${index + 1}.jpg`}
+                        alt={`Crazy 8s sketch for ${feature.title}`}
+                      />
                     </div>
                   </div>
                   <div>
                     <h4 className="font-medium mb-2">Storyboard</h4>
                     <div className="relative h-[200px] w-full">
-                      <div className="absolute inset-0 flex items-center justify-center bg-cream/50 rounded-lg border-2 border-dashed border-cambridge-blue/30">
-                        <p className="text-gray-500 italic">Storyboard Pending</p>
-                      </div>
+                      <ImageModal
+                        src={`/S${index + 1}.jpg`}
+                        alt={`Storyboard for ${feature.title}`}
+                      />
                     </div>
                   </div>
                 </div>
