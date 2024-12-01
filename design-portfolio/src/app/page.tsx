@@ -30,9 +30,9 @@ const sections = [
     delay: "stagger-delay-4"
   },
   {
-    title: "Prototypes",
+    title: "Paper Prototype",
     description: "Testing and validation",
-    href: "/prototypes",
+    href: "/paper-prototype",
     color: "from-cambridge-blue to-light-pink",
     delay: "stagger-delay-1"
   },
@@ -44,9 +44,9 @@ const sections = [
     delay: "stagger-delay-2"
   },
   {
-    title: "Evaluation",
+    title: "High-Fidelity Prototype",
     description: "User testing results",
-    href: "/evaluation",
+    href: "/high-fidelity-prototype",
     color: "from-dark-purple to-gray",
     delay: "stagger-delay-3"
   },

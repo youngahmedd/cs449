@@ -24,9 +24,9 @@ export default function Navigation() {
               ['Users', '/users'],
               ['Interviews', '/interviews'],
               ['Initial Design', '/initial-design'],
-              ['Prototypes', '/prototypes'],
+              ['Paper Prototype', '/paper-prototype'],
               ['Iteration', '/iteration'],
-              ['Evaluation', '/evaluation'],
+              ['High-Fidelity Prototype', '/high-fidelity-prototype'],
               ['Conclusion', '/conclusion']
             ].map(([title, href]) => (
               <Link
