@@ -13,6 +13,13 @@ export default function PageLayout({ title, children }: PageLayoutProps) {
     "Designed in the matrix 🕶️",
     "60% of the time, it works every time 📊",
     "Built by humans, tested by cats 🐈",
+    "Don Norman approved this design* (*not really) 📚",
+    "404: Dark Pattern Not Found 🚫",
+    "Affordance level: over 9000! 💪",
+    "Jakob Nielsen would probably raise an eyebrow 🤨",
+    "More iterations than a while(true) loop 🔄",
+    "User-centered design, coffee-powered execution ☕",
+    "Passed the squint test... barely 👀"
   ];
 
   return (

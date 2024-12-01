@@ -60,30 +60,51 @@ const sections = [
 ];
 
 export default function Home() {
+  const funnyComments = [
+    "Powered by coffee and determination ☕",
+    "No pixels were harmed in the making of this page 🖥️",
+    "Built with love and occasional frustration 💝",
+    "Warning: May contain traces of genius 🧠",
+    "Made while petting a virtual cat 🐱",
+    "Designed in the matrix 🕶️",
+    "60% of the time, it works every time 📊",
+    "Built by humans, tested by cats 🐈",
+    "Don Norman approved this design* (*not really) 📚",
+    "404: Dark Pattern Not Found 🚫",
+    "Affordance level: over 9000! 💪",
+    "Jakob Nielsen would probably raise an eyebrow 🤨",
+    "More iterations than a while(true) loop 🔄",
+    "User-centered design, coffee-powered execution ☕",
+    "Passed the squint test... barely 👀"
+  ];
+
   return (
-    <div className="min-h-screen bg-gradient-to-b from-cream to-beige">
-      <main className="section-container">
-        <section className="text-center mb-16 animate-fade-in">
-          <h1 className="text-6xl font-bold mb-6">Motion Design Portfolio</h1>
-          <p className="text-xl text-gray max-w-2xl mx-auto">
-            A comprehensive journey through our design process
-          </p>
-        </section>
-        
-        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {sections.map((section) => (
-            <div key={section.title} className={`card ${section.delay}`}>
-              <Link href={section.href} className="block">
-                <div className={`h-2 w-20 mb-4 rounded-full bg-gradient-to-r ${section.color}`} />
-                <h2 className="text-xl font-semibold mb-2 group-hover:text-cambridge-blue transition-colors">
-                  {section.title}
-                </h2>
-                <p className="text-gray">{section.description}</p>
-              </Link>
-            </div>
-          ))}
-        </section>
-      </main>
-    </div>
+    <main className="min-h-screen bg-gradient-to-b from-cream to-beige p-8 pt-24">
+      <section className="text-center mb-16 animate-fade-in">
+        <h1 className="text-6xl font-bold mb-6">Motion Design Portfolio</h1>
+        <p className="text-xl text-gray max-w-2xl mx-auto">
+          A comprehensive journey through our design process
+        </p>
+      </section>
+      
+      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+        {sections.map((section) => (
+          <div key={section.title} className={`card ${section.delay}`}>
+            <Link href={section.href} className="block">
+              <div className={`h-2 w-20 mb-4 rounded-full bg-gradient-to-r ${section.color}`} />
+              <h2 className="text-xl font-semibold mb-2 group-hover:text-cambridge-blue transition-colors">
+                {section.title}
+              </h2>
+              <p className="text-gray">{section.description}</p>
+            </Link>
+          </div>
+        ))}
+      </section>
+      
+      <div className="text-center pt-4 pb-6 text-gray-500 italic text-sm">
+        <p className="mb-1">{funnyComments[Math.floor(Math.random() * funnyComments.length)]}</p>
+        <p>© {new Date().getFullYear()} Motion</p>
+      </div>
+    </main>
   );
 }
