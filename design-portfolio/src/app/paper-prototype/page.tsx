@@ -8,6 +8,7 @@ export default function PaperPrototype() {
         <div className="section-title">
           <h2>Feature Designs</h2>
         </div>
+        <p className="mb-6 text-gray-600">Our paper prototype evaluation sessions were instrumental in refining our core features. Through user feedback, we made significant adjustments to our initial concepts. For example, we simplified our original community creation feature into a more focused social feed with event integration, which was added in our final paper prototype and not in the initial feature designs below. This change made it more aligned with our users' needs and usage patterns.</p>
         <div className="grid gap-8">
           {[
             {
@@ -86,6 +87,7 @@ export default function PaperPrototype() {
         <div className="section-title">
           <h2>Base Screens</h2>
         </div>
+        <p className="mb-6 text-gray-600">After finalizing our core features, we developed these foundational base screens to establish our approach for the complete prototype. These screens served as the building blocks that guided the design and interaction patterns for all subsequent screens in our paper prototype.</p>
         <div className="grid md:grid-cols-2 gap-8">
           {[
             {

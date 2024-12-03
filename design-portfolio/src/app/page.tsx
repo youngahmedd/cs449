@@ -101,6 +101,25 @@ export default function Home() {
         ))}
       </section>
       
+      <section className="max-w-4xl mx-auto mb-16 animate-fade-in">
+        <div className="bg-white p-8 rounded-lg shadow-lg border border-gray-100">
+          <h2 className="text-3xl font-bold mb-4 text-center text-cambridge-blue">Interactive Prototype</h2>
+          <p className="text-lg text-gray-600 text-center mb-6">
+            Experience our final design through our interactive prototype. Click below to explore the full functionality of Motion.
+          </p>
+          <div className="text-center">
+            <a 
+              href="https://www.figma.com/proto/QawuDeSXiW6jr85RA8MsJE/Motion-Hi-Fi-Prototype?node-id=0-1&t=fzi18ZhXijwR6oyX-1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-cambridge-blue hover:underline"
+            >
+              View Figma Prototype →
+            </a>
+          </div>
+        </div>
+      </section>
+      
       <div className="text-center pt-4 pb-6 text-gray-500 italic text-sm">
         <p className="mb-1">{funnyComments[Math.floor(Math.random() * funnyComments.length)]}</p>
         <p>© {new Date().getFullYear()} Motion</p>

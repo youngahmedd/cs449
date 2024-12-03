@@ -5,12 +5,18 @@ import ImageModal from '@/components/ImageModal';
 export default function Interviews() {
   const interviewees = [
     {
-      type: "Mock Interview",
+      type: "Mock Interviews",
       participants: [
         {
           age: 22,
           gender: "M",
           profession: "Computer Science Student at UW",
+          location: "Waterloo"
+        },
+        {
+          age: 22,
+          gender: "F",
+          profession: "Student",
           location: "Waterloo"
         }
       ]
@@ -34,18 +40,12 @@ export default function Interviews() {
           age: 22,
           gender: "M",
           profession: "Young Adult (Full-time)",
-          location: "Not Specified"
-        },
-        {
-          age: 23,
-          gender: "F",
-          profession: "Student",
-          location: "Not Specified"
+          location: "San Francisco"
         },
         {
           age: 35,
           gender: "M",
-          profession: "Software Professional",
+          profession: "Software Professional with Young Family",
           location: "Seattle"
         },
         {
@@ -61,13 +61,43 @@ export default function Interviews() {
           location: "Montreal"
         }
       ]
+    },
+    {
+      type: "Prototype Evaluation",
+      participants: [
+        {
+          age: 22,
+          gender: "M",
+          profession: "Product Designer/Student",
+          location: "Waterloo"
+        },
+        {
+          age: 35,
+          gender: "M",
+          profession: "Software Professional with Young Family",
+          location: "Seattle"
+        },
+        {
+          age: 23,
+          gender: "F",
+          profession: "Student",
+          location: "Waterloo"
+        },
+        {
+          age: 23,
+          gender: "F",
+          profession: "Software Engineering Intern",
+          location: "Montreal"
+        }
+      ]
     }
   ];
 
   // Calculate demographics statistics
   const allParticipants = [
     ...interviewees[0].participants,
-    ...interviewees[1].participants
+    ...interviewees[1].participants,
+    ...interviewees[2].participants
   ];
 
   const stats = {
@@ -83,7 +113,7 @@ export default function Interviews() {
       Toronto: allParticipants.filter(p => p.location === "Toronto").length,
       Montreal: allParticipants.filter(p => p.location === "Montreal").length,
       Seattle: allParticipants.filter(p => p.location === "Seattle").length,
-      Other: allParticipants.filter(p => p.location === "Not Specified").length
+      "San Francisco": allParticipants.filter(p => p.location === "San Francisco").length
     }
   };
 

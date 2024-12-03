@@ -12,7 +12,8 @@ export default function Iteration() {
         <div className="grid gap-8">
           <div className="highlight-box">
             <h3 className="text-cambridge-blue mb-4">Test Plan Overview</h3>
-            <p className="mb-4">Our evaluation focused on three core tasks designed to test essential app functionalities:</p>
+            <p className="mb-4">Before conducting our formal evaluations, we held paper prototype testing sessions which helped identify initial usability issues and refine our core interaction flows before moving to digital prototypes.</p>
+            <p className="mb-4">Our evaluation then focused on three core tasks designed to test essential app functionalities:</p>
             <div className="space-y-6">
               {[
                 {

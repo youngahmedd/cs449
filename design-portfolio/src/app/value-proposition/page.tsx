@@ -53,8 +53,7 @@ export default function ValueProposition() {
             </ul>
           </div>
           <div className="space-y-4">
-            <p>For some people, it would be infeasible to walk rather than take buses or drive because of the significant differences in time it would take. For others, they would stay at home doing other forms of social interaction, rather than getting some fresh air by taking a walk outside.</p>
-            <p>These people often commute to a lot of places but find walking unengaging and uninvolved. These are people for whom commuting through familiar routes feels bland or lacking in surprises, making active transportation an unattractive option. These individuals are tech-savvy, socially driven, and willing to adopt digital solutions for convenience and lifestyle enhancement. Finally, since the target group usually uses a lot of social media in their daily lives, what if this social media helps them have a healthier life by motivating them to walk?</p>
+            <p>For some people, it would be infeasible to walk rather than take buses or drive because of the significant differences in time it would take. For others, they would stay at home doing other forms of social interaction, rather than getting some fresh air by taking a walk outside. Out of all the people who do not utilize active transport, we narrowed down the target audience for our app to students and working professionals living in cities. These people often commute to a lot of places but find walking not socially engaging enough to be worthwhile.</p>
           </div>
         </div>
       </section>
@@ -66,11 +65,66 @@ export default function ValueProposition() {
         <div className="content-grid">
           <div className="highlight-box">
             <h3>Identified Niches</h3>
-            <p className="text-gray-500 italic">Content pending: Description of problems and empty niches originally identified and how the project addressed them.</p>
+            <div className="space-y-4">
+              <div>
+                <h4 className="font-medium text-cambridge-blue mb-2">Active Transportation Barriers</h4>
+                <ul className="space-y-2">
+                  {[
+                    "Lack of motivation for regular walking activities",
+                    "Limited awareness of interesting local routes",
+                    "Missing social connection in daily commutes",
+                    "Insufficient engagement with local community spaces"
+                  ].map((item, i) => (
+                    <li key={i} className="flex items-center gap-2">
+                      <div className="w-2 h-2 rounded-full bg-light-pink" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-medium text-cambridge-blue mb-2">Solution Approach</h4>
+                <ul className="space-y-2">
+                  {[
+                    "Gamified walking experience with virtual pet companion",
+                    "Community-curated landmarks and points of interest",
+                    "Social features integrated into daily routes",
+                    "Real-time community engagement opportunities"
+                  ].map((item, i) => (
+                    <li key={i} className="flex items-center gap-2">
+                      <div className="w-2 h-2 rounded-full bg-tea-green" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
           </div>
           <div className="highlight-box">
             <h3>Project Focus</h3>
-            <p className="text-gray-500 italic">Content pending: Specific problems that became the focus of the project.</p>
+            <div className="space-y-4">
+              <p>Our project addresses three core problems in active transportation:</p>
+              <ul className="space-y-3">
+                <li className="flex items-center gap-2">
+                  <div className="w-2 h-2 rounded-full bg-cambridge-blue" />
+                  <span>
+                    <strong>Motivation Gap:</strong> Traditional fitness apps lack engaging social elements that could make active transportation more appealing for daily use.
+                  </span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <div className="w-2 h-2 rounded-full bg-tea-green" />
+                  <span>
+                    <strong>Awareness Gap:</strong> People often commute to a lot of places but find walking unengaging and uninvolved.
+                  </span>
+                </li>
+                <li className="flex items-center gap-2">
+                  <div className="w-2 h-2 rounded-full bg-light-pink" />
+                  <span>
+                    <strong>Social Connection Gap:</strong> Traditional fitness apps lack social connection in daily commutes.
+                  </span>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
