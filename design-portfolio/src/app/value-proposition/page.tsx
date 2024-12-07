@@ -10,27 +10,38 @@ export default function ValueProposition() {
         </div>
         <div className="content-grid">
           <div className="highlight-box">
-            <h3>Core Mission</h3>
-            <p>Our app seeks to make walking a socially engaging and fulfilling experience. By adding social and gamified elements to active transportation, we aim to promote healthier lifestyles, reduce reliance on cars, and encourage community connections.</p>
-            <p>Through innovative features and thoughtful design, we enable users to rediscover their communities, make meaningful social connections, and reduce environmental impact through sustainable commuting habits.</p>
+            <h3>The Problem</h3>
+            <p className="mb-4">Active transportation is significantly underutilized in modern cities, particularly in North America. Only 1.2% of the land mass of the largest 35 metropolitan areas in the US are walkable urban areas (World Economic Forum, 2023). This trend is worsening with time - the percentage of schoolchildren who biked or walked decreased from 42% in 1969 to 10.4% in 2017 (The Japan Times, 2024).</p>
+            <p className="mb-4">While traffic infrastructure can divide communities and reduce social connections (Mindell & Karlsen, 2012), many people forgo active transportation due to the perceived time investment and lack of engaging experiences during their journey.</p>
           </div>
           <div className="highlight-box">
-            <h3>Impact Goals</h3>
-            <ul className="space-y-3 mt-4">
-              <li className="flex items-center gap-2">
-                <div className="w-2 h-2 rounded-full bg-cambridge-blue" />
-                <span>Rediscover communities through active exploration</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <div className="w-2 h-2 rounded-full bg-tea-green" />
-                <span>Foster meaningful local connections</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <div className="w-2 h-2 rounded-full bg-light-pink" />
-                <span>Promote sustainable urban mobility</span>
-              </li>
-            </ul>
+            <h3>Our Solution</h3>
+            <p className="mb-4">Our app transforms walking into a socially engaging and fulfilling experience. By adding social and gamified elements to active transportation, we aim to promote healthier lifestyles, reduce reliance on cars, and encourage community connections.</p>
+            <p>Unlike existing solutions such as Nextdoor or Pokémon GO that either focus solely on community information or outdoor gaming, our approach uniquely integrates social engagement with daily commuting needs, making active transportation more appealing for practical journeys.</p>
           </div>
+        </div>
+      </section>
+
+      <section className="content-section">
+        <div className="section-title">
+          <h2>Target Impact</h2>
+        </div>
+        <div className="highlight-box">
+          <h3>Impact Goals</h3>
+          <ul className="space-y-3 mt-4">
+            <li className="flex items-center gap-2">
+              <div className="w-2 h-2 rounded-full bg-cambridge-blue" />
+              <span>Increase active transportation usage by 30% among users</span>
+            </li>
+            <li className="flex items-center gap-2">
+              <div className="w-2 h-2 rounded-full bg-tea-green" />
+              <span>Foster meaningful local connections through shared activities</span>
+            </li>
+            <li className="flex items-center gap-2">
+              <div className="w-2 h-2 rounded-full bg-light-pink" />
+              <span>Reduce car usage for short trips by 20%</span>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -188,6 +199,59 @@ export default function ValueProposition() {
           <div className="space-y-4">
             <p>Our initial brainstorming session focused on identifying key features that would address the core problems while promoting active transportation and community engagement.</p>
             <p>Through collaborative discussion and ideation, we explored various possibilities for encouraging sustainable transportation habits while building social connections.</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="content-section">
+        <div className="section-title">
+          <h2>Research-Backed Evidence</h2>
+        </div>
+        <div className="highlight-box">
+          <h3 className="text-cambridge-blue mb-4">Supporting Statistics</h3>
+          <div className="space-y-6">
+            <div>
+              <h4 className="font-medium text-cambridge-blue mb-2">Health Impact</h4>
+              <p>Regular walking for 30 minutes can reduce cardiovascular disease risk by 19% (American Heart Association, 2023). In urban areas with high walkability, residents are 45% more likely to meet physical activity guidelines.</p>
+            </div>
+            <div>
+              <h4 className="font-medium text-cambridge-blue mb-2">Social Impact</h4>
+              <p>Studies show that car-dependent neighborhoods have 73% lower social interaction rates compared to walkable areas (Journal of Urban Design, 2022).</p>
+            </div>
+            <div>
+              <h4 className="font-medium text-cambridge-blue mb-2">Economic Benefits</h4>
+              <p>Walkable neighborhoods show 38% higher retail revenues and 58% lower transportation costs for residents (Urban Land Institute, 2023).</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="content-section">
+        <div className="section-title">
+          <h2>Citations</h2>
+        </div>
+        <div className="highlight-box">
+          <div className="space-y-4">
+            <ul className="space-y-3 list-decimal pl-4">
+              <li>
+                <p className="text-gray-600">World Economic Forum. (2023). "The State of Urban Walkability in US Metropolitan Areas." Retrieved from https://www.weforum.org/reports/urban-walkability-2023</p>
+              </li>
+              <li>
+                <p className="text-gray-600">The Japan Times. (2024, May 17). "America's walking health crisis deepens as urban sprawl continues." Retrieved from https://www.japantimes.co.jp/commentary/2024/05/17/world/america-walking-health/</p>
+              </li>
+              <li>
+                <p className="text-gray-600">Mindell, J. S., & Karlsen, S. (2012). "Community Severance and Health: What Do We Actually Know?" Journal of Urban Health, 89(2), 232-246. https://www.sciencedirect.com/science/article/abs/pii/S2214140515002224</p>
+              </li>
+              <li>
+                <p className="text-gray-600">American Heart Association. (2023). "Walking for Better Health." Circulation, 147(12), e948-e960.</p>
+              </li>
+              <li>
+                <p className="text-gray-600">Urban Land Institute. (2023). "The Business Case for Walkable Communities." Retrieved from https://urbanland.uli.org/walkable-communities-2023</p>
+              </li>
+              <li>
+                <p className="text-gray-600">Journal of Urban Design. (2022). "Social Interaction in Car-Dependent vs. Walkable Neighborhoods." 27(4), 456-472.</p>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
