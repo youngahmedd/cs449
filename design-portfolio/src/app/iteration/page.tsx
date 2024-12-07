@@ -95,7 +95,6 @@ export default function Iteration() {
                   {[
                     "Simulate system responses",
                     "Handle unexpected interactions",
-                    "Maintain 5-second response rule",
                     "Track interaction patterns",
                     "Note technical challenges"
                   ].map((duty, i) => (
