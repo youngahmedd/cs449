@@ -205,29 +205,6 @@ export default function ValueProposition() {
 
       <section className="content-section">
         <div className="section-title">
-          <h2>Research-Backed Evidence</h2>
-        </div>
-        <div className="highlight-box">
-          <h3 className="text-cambridge-blue mb-4">Supporting Statistics</h3>
-          <div className="space-y-6">
-            <div>
-              <h4 className="font-medium text-cambridge-blue mb-2">Health Impact</h4>
-              <p>Regular walking for 30 minutes can reduce cardiovascular disease risk by 19% (American Heart Association, 2023). In urban areas with high walkability, residents are 45% more likely to meet physical activity guidelines.</p>
-            </div>
-            <div>
-              <h4 className="font-medium text-cambridge-blue mb-2">Social Impact</h4>
-              <p>Studies show that car-dependent neighborhoods have 73% lower social interaction rates compared to walkable areas (Journal of Urban Design, 2022).</p>
-            </div>
-            <div>
-              <h4 className="font-medium text-cambridge-blue mb-2">Economic Benefits</h4>
-              <p>Walkable neighborhoods show 38% higher retail revenues and 58% lower transportation costs for residents (Urban Land Institute, 2023).</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="content-section">
-        <div className="section-title">
           <h2>Citations</h2>
         </div>
         <div className="highlight-box">
@@ -241,15 +218,6 @@ export default function ValueProposition() {
               </li>
               <li>
                 <p className="text-gray-600">Mindell, J. S., & Karlsen, S. (2012). "Community Severance and Health: What Do We Actually Know?" Journal of Urban Health, 89(2), 232-246. https://www.sciencedirect.com/science/article/abs/pii/S2214140515002224</p>
-              </li>
-              <li>
-                <p className="text-gray-600">American Heart Association. (2023). "Walking for Better Health." Circulation, 147(12), e948-e960.</p>
-              </li>
-              <li>
-                <p className="text-gray-600">Urban Land Institute. (2023). "The Business Case for Walkable Communities." Retrieved from https://urbanland.uli.org/walkable-communities-2023</p>
-              </li>
-              <li>
-                <p className="text-gray-600">Journal of Urban Design. (2022). "Social Interaction in Car-Dependent vs. Walkable Neighborhoods." 27(4), 456-472.</p>
               </li>
             </ul>
           </div>
