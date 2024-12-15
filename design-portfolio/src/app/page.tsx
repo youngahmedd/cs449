@@ -82,9 +82,15 @@ export default function Home() {
     <main className="min-h-screen bg-gradient-to-b from-cream to-beige p-8 pt-24">
       <section className="text-center mb-16 animate-fade-in">
         <h1 className="text-6xl font-bold mb-6">Motion Design Portfolio</h1>
-        <p className="text-xl text-gray max-w-2xl mx-auto">
+        <p className="text-xl text-gray max-w-2xl mx-auto mb-8">
           A comprehensive journey through our design process
         </p>
+        <div className="text-lg text-gray-600">
+          <p className="mb-2">Project Contributors:</p>
+          <p>
+            Jenny Tai / Jack Cui / Molly Xu / Vibhor Gautam / Ahmed Ahmed
+          </p>
+        </div>
       </section>
       
       <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
